@@ -60,4 +60,14 @@
     <string name="valetcodigodelete">Ingrese cod producto</string>
     <string name="valetnombredelete">Nombre de producto</string>
     <string name="valetpreciodelete">Ingrese precio</string>
+    <string name="tituloinforme">Informe</string>
+    <string name="informess">Informes</string>
+    <string name="fecha">Fecha de Informe:</string>
+    <string name="filtrar">Filtrar productos por:</string>
+    <string name="valbtngenerar">Generar Informe</string>
+    <string name="valbtnverinforme">Ver Informe</string>
+    <string name="valbtncompartir">Compartir</string>
+    <string name="valbtnimprimir">Imprimir</string>
+    <string name="valbtnguardar">Guardar</string>
+    <string name="valcbrecordar">"Recordarme "</string>
 </resources>

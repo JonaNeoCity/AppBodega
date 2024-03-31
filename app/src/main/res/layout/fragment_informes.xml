@@ -1,14 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InformesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/btncompartir"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/valbtncompartir"
+        app:icon="@drawable/baseline_ios_share_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/btnverinforme" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnimprimir"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/valbtnimprimir"
+        app:icon="@drawable/baseline_local_printshop_24"
+        app:layout_constraintTop_toBottomOf="@+id/btnverinforme"
+        tools:layout_editor_absoluteX="191dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/filtrar"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:layout_editor_absoluteX="126dp" />
+
+    <Button
+        android:id="@+id/btngenerar"
+        android:layout_width="221dp"
+        android:layout_height="77dp"
+        android:text="@string/valbtngenerar"
+        app:icon="@drawable/baseline_note_alt_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/valbtnguardar"
+        app:icon="@drawable/baseline_archive_24"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/btnverinforme" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/informess"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnverinforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/valbtnverinforme"
+        app:icon="@drawable/baseline_find_in_page_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/btngenerar" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="168dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
