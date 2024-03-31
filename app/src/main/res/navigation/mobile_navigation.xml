@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.appbodega.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.example.appbodega.MenuPrincipalFragment"
+        android:label="@string/menu_principal"
+        tools:layout="@layout/fragment_menu_principal" />
+    <fragment
+        android:id="@+id/agregarFragment"
+        android:name="com.example.appbodega.AgregarFragment"
+        android:label="@string/agregar"
+        tools:layout="@layout/fragment_agregar" />
+    <fragment
+        android:id="@+id/editarFragment"
+        android:name="com.example.appbodega.EditarFragment"
+        android:label="@string/editar"
+        tools:layout="@layout/fragment_editar" />
+    <fragment
+        android:id="@+id/eliminarFragment"
+        android:name="com.example.appbodega.EliminarFragment"
+        android:label="@string/eliminar"
+        tools:layout="@layout/fragment_eliminar" />
+    <fragment
+        android:id="@+id/informesFragment"
+        android:name="com.example.appbodega.InformesFragment"
+        android:label="@string/informes"
+        tools:layout="@layout/fragment_informes" />
+</navigation>

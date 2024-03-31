@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/loginFragment"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/menuPrincipalFragment"
+            android:icon="@drawable/baseline_cottage_24"
+            android:title="@string/menu_principal" />
+        <item
+            android:id="@+id/agregarFragment"
+            android:icon="@drawable/baseline_add_shopping_cart_24"
+            android:title="@string/agregar" />
+
+        <item
+            android:id="@+id/editarFragment"
+            android:icon="@drawable/baseline_edit_note_24"
+            android:title="@string/editar" />
+
+        <item
+            android:id="@+id/eliminarFragment"
+            android:icon="@drawable/baseline_delete_forever_24"
+            android:title="@string/eliminar" />
+        <item
+            android:id="@+id/informesFragment"
+            android:icon="@drawable/baseline_grading_24"
+            android:title="@string/informes" />
+
+    </group>
+</menu>
